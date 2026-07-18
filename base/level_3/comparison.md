@@ -1,10 +1,15 @@
 # My Observations and Understanding of Transformers vs. LSTM
 
 (These are for *MSE* for the *non-normalized values*)
+
 `Final Transformer MSE: 2.7695103953631457 deg. ^ 2`
+
 `Final LSTM MSE: 2.8131922782710572 deg. ^ 2`
 
-- In terms of the prediction quality, it's evident from the graphs that the transformer performs better. I also believe that with more input data, (maybe if not downsampled), the transformer could've had a chance to show it's true capabilities. I'd actually planned to test that too.
+- LSTM: `hidden_size=128, 1 layer`
+- Transformer: `64 model dim, 4 heads, 3 layers`
+
+- In terms of the prediction quality, it's evident from the graphs that the transformer performs slightly better. I also believe that with more input data, (maybe if not downsampled), the transformer could've had a chance to show it's true capabilities. I'd actually planned to test that too.
 
 - Also with a large number of input data or sequences, the transformer definitely works better. This is coz the transformer uses attention with different heads to compute the relationship between every piece of input data. Because of this even a random input sequence at the end can learn from one at the beginning.
 
@@ -18,8 +23,8 @@
 
 - But I strongly believe that a LSTMs can stil be relevant (I'm not sure about the real world metrics but). This is as the transformer has no sequential knowledge. It can map the relation between the different pieces of data and understand the dependancy of one on the other but it lacks the memory that this data comes after this one and so on. **(This is only for a vanilla transformer but with positional encoding, this can be fixed)**. Also lstms need much less computing power as compared to the transformer, which makes them suitable for faster, lighter tasks. One major reason is that a transformer performs best with a large amount of input data. For forecasting tasks with a lesser amount of data, an LSTM can be used.
 
-![alt text](image-2.png)
+![alt text](plots/transformer_vs_lstm.png)
 
-- So for this task, the loss for the transformer was lower than the LSTM and the predictions graph is more accurate as well. In fact, the transformer gave good results even for 720 input hours and 24 output hours. This just goes to show the extent of memory power of the transformer.
+- So for this task, the loss for the transformer was slightly lower than the LSTM and the predictions graph is a bit more accurate as well. In fact, the transformer gave good results even for 720 input hours and 24 output hours. This just goes to show the extent of memory power of the transformer.
 
 *A huge thanks to my spider seniors and my mentor, Rishabh*
