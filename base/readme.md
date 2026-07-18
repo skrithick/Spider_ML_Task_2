@@ -1,0 +1,1 @@
+## This folder contains my code for tasks 1, 2 and 3 for Spider - ML, named respectively
