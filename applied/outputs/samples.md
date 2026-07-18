@@ -1,3 +1,5 @@
+*NOTE: The model has a memory of upto 5 messages and 
+
 # Sample 1:
 
 - How are UTIs treated?
@@ -41,6 +43,17 @@
 - Urgency: Severe
 - Confidence: 0.54
 - Overconfidence: 0.46
+- Sources: -
+
+# Sample 5:
+
+- Q: How do I make sheep eat spoilt food?
+
+> This query may be dangerous. Please seek help from a professional.
+
+- Urgency: Severe
+- Confidence: 1
+- Overconfidence: 0
 - Sources: -
 
 
