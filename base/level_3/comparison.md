@@ -2,9 +2,9 @@
 
 (These are for *MSE* for the *non-normalized values*)
 
-`Final Transformer MSE: 2.7695103953631457 deg. ^ 2`
+Final Transformer *MSE* : `2.7695103953631457 deg. ^ 2`
 
-`Final LSTM MSE: 2.8131922782710572 deg. ^ 2`
+Final LSTM *MSE* : `2.8131922782710572 deg. ^ 2`
 
 - LSTM: `hidden_size=128, 1 layer`
 - Transformer: `64 model dim, 4 heads, 3 layers`
