@@ -1,4 +1,4 @@
-*NOTE: The model has a memory of upto 5 messages and 
+*NOTE: The model has a memory of upto 5 messages and I haven't included examples of memory in the samples, but I've included in the video* 
 
 # Sample 1:
 
