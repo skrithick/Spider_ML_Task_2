@@ -6,7 +6,7 @@ The folders are named as per their tasks
 
 **API key for Voyage AI can also be provided if needed for evaluation**
 
-_Built by Krithick, guided by mentor Rishabh_
-
 ### Also Contains:
 ![](applied/image.png)
+
+_Built by Krithick, guided by mentor Rishabh_
