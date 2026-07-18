@@ -26,4 +26,6 @@
 
 - As I was building the transformer for level 3, I noticed that we used residual connections there too, a sort of mini resnet. So I wanted to find out how resnets were used inside transformers.
 
-- After the attention was calculated and passed through the ff networks, the original input vector is added to the calculated output. Again, this helps in gradient safety during backprop, and allows for the original input information weight to not get lost. It's also faster and more intuitive for the model to have less to predict.s
+- After the attention was calculated and passed through the ff networks, the original input vector is added to the calculated output. Again, this helps in gradient safety during backprop, and allows for the original input information weight to not get lost. It's also faster and more intuitive for the model to have less to predict.
+
+*A huge thanks to my spider seniors and my mentor, Rishabh*

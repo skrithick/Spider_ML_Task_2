@@ -11,3 +11,5 @@
 - After that I finally tackled the task-3 resnet.
 
 - I was curious about the different architectures like resnet18, resnet20, resnet9, resnet56 etc., so I tried them all. I found that resnet18 gave me the best balance between parameters and performance. It had the least overfitting as well.
+
+*A huge thanks to my spider seniors and my mentor, Rishabh*

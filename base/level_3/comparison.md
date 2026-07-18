@@ -21,3 +21,5 @@
 ![alt text](image-2.png)
 
 - So for this task, the loss for the transformer was lower than the LSTM and the predictions graph is more accurate as well. In fact, the transformer gave good results even for 720 input hours and 24 output hours. This just goes to show the extent of memory power of the transformer.
+
+*A huge thanks to my spider seniors and my mentor, Rishabh*

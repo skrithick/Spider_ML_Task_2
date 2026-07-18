@@ -50,3 +50,5 @@ To my understanding,
 - Coming to the actual forecasting challenges, 72 hours i.e 72 pieces of input timeseries data was slightly contrictive. I tested forecasting the next hour, which was very accurate, but predicting the next 12 had significant accuracy drops, and seeing the predictions vs. real graphs was heartbreaking.
 
 - Also sometimes when I was using MSE Loss, the model was too flat, coz mse penalizes outliers really heavily. This was fixed by using huber loss instead.
+
+*A huge thanks to my spider seniors and my mentor, Rishabh*

@@ -10,3 +10,5 @@
 
 - My notes involving my learning of transformers have also been attached in the repo.
 
+*A huge thanks to my spider seniors and my mentor, Rishabh*
+
