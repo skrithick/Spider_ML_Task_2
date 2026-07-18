@@ -8,5 +8,5 @@ The folders are named as per their tasks
 
 _Built by Krithick, guided by mentor Rishabh_
 
-Also Contains:
+### Also Contains:
 ![](applied/image.png)
