@@ -5,7 +5,7 @@
 
 - This is my submission for the applied ml task - 2 of spider-ml inductions.
 
-- Architecure design chart has been attached
+- Architecure design chart has been attached.
 
 Libraries I used for this:
  - Langchain for rag purposes
