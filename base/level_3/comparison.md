@@ -1,5 +1,9 @@
 # My Observations and Understanding of Transformers vs. LSTM
 
+(These are for *MSE* for the *non-normalized values*)
+`Final Transformer MSE: 2.7695103953631457 deg. ^ 2`
+`Final LSTM MSE: 2.8131922782710572 deg. ^ 2`
+
 - In terms of the prediction quality, it's evident from the graphs that the transformer performs better. I also believe that with more input data, (maybe if not downsampled), the transformer could've had a chance to show it's true capabilities. I'd actually planned to test that too.
 
 - Also with a large number of input data or sequences, the transformer definitely works better. This is coz the transformer uses attention with different heads to compute the relationship between every piece of input data. Because of this even a random input sequence at the end can learn from one at the beginning.
