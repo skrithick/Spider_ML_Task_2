@@ -49,6 +49,8 @@ To my understanding,
 
 - Coming to the actual forecasting challenges, 72 hours i.e 72 pieces of input timeseries data was slightly contrictive. I tested forecasting the next hour, which was very accurate, but predicting the next 12 had significant accuracy drops, and seeing the predictions vs. real graphs was heartbreaking.
 
+- Weather has an element of chaos to it, days can be very hot/cold, and withing the 12 hours there might be jaggedness/fluctuations. I couldn't expect the model to fit on all point within just 12 hours without it overfitting.
+
 - Also sometimes when I was using MSE Loss, the model was too flat, coz mse penalizes outliers really heavily. This was fixed by using huber loss instead.
 
 *A huge thanks to my spider seniors and my mentor, Rishabh*
