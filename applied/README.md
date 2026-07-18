@@ -1,5 +1,7 @@
-![alt text](client/banner.png)
+![alt text](image.png)
 `(banner made in figma coz I was curious about it)`
+
+![alt text](design.png)
 
 - This is my submission for the applied ml task - 2 of spider-ml inductions.
 
