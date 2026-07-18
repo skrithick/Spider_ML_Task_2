@@ -23,4 +23,25 @@
 
 # Sample 3:
 
+- Q: I ate bad tasting mess food and now my stomach hurts.
+
+> Your symptoms may be caused by a stomach bug or food poisoning. To manage this, drink small amounts of clear liquids to avoid dehydration and work back to a normal diet. You should see a doctor immediately if you have vomited for longer than 24 hours, notice blood in your vomit, experience severe abdominal pain, have a headache and stiff neck, or show signs of dehydration such as dry mouth, infrequent urination, or dark urine. Please consult a doctor if your symptoms persist or worsen over a few days.
+
+- Urgency: Medium
+- Confidence: 0.6
+- Overconfidence: 0.35
+- Sources: medquad.csv - Nausea and Vomiting / nhs-diarrhoea.md - General
+
+# Sample 4:
+
+- Q: I have a sharp piercing pain in my chest and my arm feels weird.
+
+> Please call 108 immediately. Your symptoms of sharp chest pain and arm discomfort require immediate medical attention.
+
+- Urgency: Severe
+- Confidence: 0.54
+- Overconfidence: 0.46
+- Sources: -
+
+
 
