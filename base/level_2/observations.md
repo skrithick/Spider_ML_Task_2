@@ -41,15 +41,15 @@ To my understanding,
 
 - The model did overfit a bit, and I first tuned the hyperparameters so as to not bloat it with a bunch of memory and power that might make it do so. I also implemented early stopping.
 
-- I think the lstm was the part of the task I faced most challenges with. The first thing was data processing. As aforementioned, I had to fix a lot of the columns, drop na, and the wind velocity had crazy sensor errors as well.
+- When it came to the data-preprocessing, I tried everything. Feature extraction and engineering. I had to plot the correlation between each of the features and the temperatures 12 hours ahead in order to properly understand which features were necessary.
+
+- As aforementioned, I had to fix a lot of the columns, drop na, and the wind velocity had crazy sensor errors as well.
 
 - Apart from that I would've ran maybe 10 iterations again, and again changing the schedulers, gradient clippers, hidden size, number of layers, the features I would drop. It seemed as though everything was a variable that I had to modify and tune to get the best results. But eventually I calmed down, and tried one-by-one (with the nn.LSTM for speed), I saw parameters helped, and which didn't.
 
 - I actually worked on the lstm and transformers side-by-side continuously from finishing the resnet till I finished the healthcare chatbot.
 
 - Coming to the actual forecasting challenges, 72 hours i.e 72 pieces of input timeseries data was slightly contrictive. I tested forecasting the next hour, which was very accurate, but predicting the next 12 had significant accuracy drops, and seeing the predictions vs. real graphs was heartbreaking.
-
-- Weather has an element of chaos to it, days can be very hot/cold, and withing the 12 hours there might be jaggedness/fluctuations. I couldn't expect the model to fit on all point within just 12 hours without it overfitting.
 
 - Also sometimes when I was using MSE Loss, the model was too flat, coz mse penalizes outliers really heavily. This was fixed by using huber loss instead.
 
