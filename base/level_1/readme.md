@@ -4,3 +4,7 @@
 - The `observations.md` contains my observations.
 
 - Final Testing Accuracy: 92.37%
+
+![](plots/accuracy_plots.png)
+![](plots/accuracy_proof.png)
+![](plots/confusion_matrix.png)

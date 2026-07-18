@@ -30,3 +30,11 @@ MSE:	5.202295712598031
 MAE:	1.751215804599216
 Huber:	1.3171523773027556
 ```
+`Transformer 72`
+![](plots/transformer_72.png)
+
+`Transformer 720`
+![](plots/transformer_720.png)
+
+`Transformer vs. LSTM`
+![](plots/transformer_vs_lstm.png)

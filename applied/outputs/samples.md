@@ -1,6 +1,8 @@
 **NOTE**: *The model has a memory of upto 5 messages and I've included samples of the memory in the video demo along with a demo of the summarizer action* 
 
-# Sample 1:
+# Proper Testing Questions
+
+## Sample 1:
 
 - How are UTIs treated?
 
@@ -11,7 +13,7 @@
 - Overconfidence: `0.14`
 - Sources: `medquad.csv - Urinary Tract Infections / medquad.csv - Urinary Tract Infection In Adults / medquad.csv - Medullary Sponge Kidney`
 
-# Sample 2:
+## Sample 2:
 
 - What lifestyle changes can help manage hypertension?
 
@@ -23,7 +25,7 @@
 - Overconfidence: `0.11`
 - Sources: `medquad.csv - High Blood Pressure`
 
-# Sample 3:
+## Sample 3:
 
 - Q: I ate bad tasting mess food and now my stomach hurts.
 
@@ -34,7 +36,7 @@
 - Overconfidence: `0.35`
 - Sources: `medquad.csv - Nausea and Vomiting / nhs-diarrhoea.md - General`
 
-# Sample 4:
+## Sample 4:
 
 - Q: I have a sharp piercing pain in my chest and my arm feels weird.
 
@@ -45,7 +47,7 @@
 - Overconfidence: `0.46`
 - Sources: `-`
 
-# Sample 5:
+## Sample 5:
 
 - Q: How do I make sheep eat spoilt food?
 
@@ -55,6 +57,18 @@
 - Confidence: `1`
 - Overconfidence: `0`
 - Sources: `-`
+
+## Sample 6:
+
+- Q: I have a temperature of 101 Fahrenheit
+
+>A body temperature over 98.6 degrees Fahrenheit is considered a fever. A high temperature is often caused by your body fighting an infection, such as a cold or flu, and is not usually a sign of anything serious. However, it could be a sign of something more serious if your temperature is very high or will not come down. You can call 111 or get help from 111 online. Please consult a doctor if your symptoms persist or worsen over a few days.
+
+- Urgency: `Medium`
+- Confidence: `0.63`
+- Overconfidence: `0.37`
+- Sources: `nhs-fever-in-adults.md - General / medquad.csv - Vital Signs`
+
 
 # Testing of Jailbreaks/Hallucinations:
 
