@@ -1,4 +1,6 @@
-**NOTE**: *The model has a memory of upto 5 messages and I've included samples of the memory in the video demo along with a demo of the summarizer action* 
+**NOTE**: *The model has a memory of upto 5 messages and I've included samples of the memory in the video demo along with a demo of the summarizer action, but I haven't included the examples in this file* 
+
+*The video can be found in the github repo*
 
 # Proper Testing Questions
 
