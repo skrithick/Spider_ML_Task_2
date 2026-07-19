@@ -1,10 +1,16 @@
 # My Observations and Understanding of Transformers vs. LSTM
 
-(These are for *MSE* for the *non-normalized values*)
+**(These are comparosons for the *non-normalized values, in celcius*)**
 
-Final Transformer *MSE* : `2.7695103953631457 deg. ^ 2`
+>*Note: The transformer and lstm here both are trained on previous 72 hours and predict next 12 hours. This has been done so that a fair comparison can be made. But I got a good result even for the transformer's 720 input hours and 24 output, that code has also been attached*
 
-Final LSTM *MSE* : `2.8131922782710572 deg. ^ 2`
+| Type of Loss | LSTM | Transformer |
+| --- | --- | --- |
+| Huber | 0.8296 | 0.8288 |
+| MSE | 2.8131 | 2.7695 |
+| MAE | 1.2264 | 1.2282 |
+
+*We can see that the transformer yielded slightly better results.*
 
 - LSTM: `hidden_size=128, 1 layer`
 - Transformer: `64 model dim, 4 heads, 3 layers`
