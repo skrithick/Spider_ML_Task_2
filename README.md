@@ -18,6 +18,6 @@ For the base tasks:
 
 ![](applied/image.png)
 
-![alt text](image-1.png)
+![alt text](image-2.png)
 
 _Built by Krithick, guided by mentor Rishabh_

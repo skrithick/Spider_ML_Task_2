@@ -7,7 +7,17 @@
 
 - This is my submission for the applied ml task - 2 of spider-ml inductions.
 
-- Architecure design chart has been attached.
+- The `architecture` folder contains the Architecure design chart, and a markdown file, containing my architectural choices
+
+- The `outputs` folder contains sample input/outputs and proofs for the same.
+
+- The `evaluation-suggestions.md` contains suggested methods for evaluation.
+
+- *This* file contains my documentation of how I built it.
+
+- The `code` folder contains my code
+
+- The vector db can be downloaded from the releases section, `vectorstore.7z` and is to be extracted into the code directory as `vectorstore`.
 
 Libraries I used for this:
  - Langchain for rag purposes
