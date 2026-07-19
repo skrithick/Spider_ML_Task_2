@@ -2,6 +2,8 @@
 
 *The video can be found in the github repo*
 
+*For safety flags, the reason will also be logged when the code is running, a demo of that is also included in the video*
+
 # Proper Testing Questions
 
 ## Sample 1:
