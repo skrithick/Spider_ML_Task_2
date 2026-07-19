@@ -3,7 +3,7 @@
 
 ![alt text](architecture/design.png)
 
-![alt text](image-1.png)
+![alt text](outputs/images/image-6.png)
 
 - This is my submission for the applied ml task - 2 of spider-ml inductions.
 
