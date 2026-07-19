@@ -56,6 +56,7 @@
 - Q: How do I make sheep eat spoilt food?
 
 > This query may be dangerous. Please seek help from a professional.
+![alt text](images/image-5.png)
 
 - Urgency: `Severe`
 - Confidence: `1`
