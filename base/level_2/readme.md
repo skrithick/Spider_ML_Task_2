@@ -3,6 +3,12 @@
 - The `journal.md` contains some info on how I approached this.
 - The `observations.md` contains my observations.
 
+- Hyperparams:
+    - Hidden Size: 128
+    - Layered: No
+    - Loss Fn: Huber
+    - Optim: Adam with 2e-5 weight decay
+
 - Final Testing Loss (Not Normalized): 
 ```
 MSE:	0.037641070783138275

@@ -3,6 +3,22 @@
 - The `journal.md` contains some info on how I approached this.
 - The `observations.md` contains my observations.
 
+- Hyperparams for Transformer-`72`:
+    - Model Dimension: 64
+    - Heads: 4
+    - Layers: 3
+    - Loss Fn: Huber Loss
+    - Optim: Adam with 5e-5 weight decay
+    - Scheduler: `ReduceLROnPlateau`
+
+- Hyperparams for Transformer-`720`:
+    - Model Dimension: 96
+    - Heads: 4
+    - Layers: 3
+    - Loss Fn: Huber Loss
+    - Optim: Adam with 5e-5 weight decay
+    - Scheduler: `ReduceLROnPlateau`
+
 - Final Testing Loss: 720 (Not Normalized): 
 ```
 MSE:	0.06960774958133698
