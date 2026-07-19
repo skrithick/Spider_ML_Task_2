@@ -2,6 +2,8 @@
 
 >*Note: The transformer and lstm here both are trained on previous 72 hours and predict next 12 hours. This has been done so that a fair comparison can be made. But I got a good result even for the transformer's 720 input hours and 24 output, that code has also been attached*
 
+## Final Testing Loss Comparisons
+
 #### These are comparisons for the *non-normalized values, in celcius*
 | Type of Loss | LSTM | Transformer |
 | --- | --- | --- |
@@ -18,12 +20,16 @@
 
 *We can see that the transformer yielded slightly better results.*
 
-- LSTM: `hidden_size=128, 1 layer`
-- Transformer: `64 model dim, 4 heads, 3 layers`
+- LSTM: `hidden_size=128, 1 layer` -> Gave final val Huber loss of `0.02170`
+- Transformer: `64 model dim, 4 heads, 3 layers` -> Gave final val Huber loss of `0.020132`
 
-- In terms of the prediction quality, it's evident from the graphs that the transformer performs slightly better. I also believe that with more input data, (maybe if not downsampled), the transformer could've had a chance to show it's true capabilities. I'd actually planned to test that too.
+### Other observations
 
-- Also with a large number of input data or sequences, the transformer definitely works better. This is coz the transformer uses attention with different heads to compute the relationship between every piece of input data. Because of this even a random input sequence at the end can learn from one at the beginning.
+- In terms of the prediction quality, it's evident from the graphs that the transformer performs slightly better. I also believe that with more input data, (maybe if not downsampled), the transformer could've had a chance to show it's true capabilities. I'd actually planned to test that too. But right now, the transformer wins only by a slight margin.
+
+- In this example the lstm is also producing a good, relevant result. I think this is coz the transformer's architectural complexity and power shows minimal difference for such a small set of input/output data. But we can see that even for the 720/24 hours the transformer produces a good result. With 72 hours, the lstm is at no real disadvantage coz of the short input/output period. I have tried everything however, to make sure that the results of both are as good as possible, tuning hyperparameters, early stopping, schedulers etc.
+
+- With a large number of input data or sequences, the transformer definitely works better. This is coz the transformer uses attention with different heads to compute the relationship between every piece of input data. Because of this even a random input sequence at the end can learn from one at the beginning.
 
 - When it comes to lstm, the understanding of data occurs sequentially, piece-by-piece so during backprop, the weightage of earlier data might be lose.
 
