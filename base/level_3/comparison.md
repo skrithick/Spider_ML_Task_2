@@ -1,14 +1,20 @@
 # My Observations and Understanding of Transformers vs. LSTM
 
-**(These are comparosons for the *non-normalized values, in celcius*)**
-
 >*Note: The transformer and lstm here both are trained on previous 72 hours and predict next 12 hours. This has been done so that a fair comparison can be made. But I got a good result even for the transformer's 720 input hours and 24 output, that code has also been attached*
 
+#### These are comparisons for the *non-normalized values, in celcius*
 | Type of Loss | LSTM | Transformer |
 | --- | --- | --- |
 | Huber | 0.8296 | 0.8288 |
 | MSE | 2.8131 | 2.7695 |
 | MAE | 1.2264 | 1.2282 |
+
+#### These are comparisons for the *normalized values*
+| Type of Loss | LSTM | Transformer |
+| --- | --- | --- |
+| Huber | 0.0188 | 0.0185 |
+| MSE | 0.0376 | 0.03705 |
+| MAE | 0.1418 | 0.1420 |
 
 *We can see that the transformer yielded slightly better results.*
 
